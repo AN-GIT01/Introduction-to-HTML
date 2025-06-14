@@ -1,0 +1,58 @@
+Lesson 1.
+Созданные html файлы полезно проверять на ресерсе: https://validator.w3.org
+
+Lesson 2.
+Типовая структура html файла
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AN">
+    <meta name="description" content="More detailed description of this page">
+    <title>Html Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <h1>It is header 1 element</h1>
+    <p>It is not my first html page</p>
+  </body>
+</html>
+
+Lesson 3.
+Для некоторых символов используются кодировка, например: &nbsp;&lt;&lt;&copy; 
+https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
+
+Lesson 4.
+Есть 3 типа списков:
+Упорядоченный: <ol> <li>
+Неупорядоченный: <ul> <li>
+Список описаний (содержит 2 типа элементов): <dl> <dt> <dd>
+
+Lesson 5.
+Ссылки бывают нескольких видов:
+Абсолютная: <a href="https://developer.mozilla.org">MDN</a>
+Относительная: <p>Download an <a href="html5.png" download>HTML5 icon file</a></p>
+Ссылка на элемент страницы: <li><a href="#sec1">Link to section 1</a></li> (при этом на странице должен быть элемент с id="sec1")
+Сылка на начало текущей страницы: <p><a href="#">Back to top</a></p>
+Ссылка на главную страницу: <p><a href="/">Back to root page</a></p>
+
+У ссылок могут быть заданы атрибуты, например:
+<p>Open : <a href="https://google.com" target="_blank">Google</a> in a new tab</p>
+<p>Download an <a href="html5.png" download>HTML5 icon file</a></p>
+так атрибут download подскажет браузеру, что файл нужно скачать, а отрибут target="_blank" - что ссылку нужно открыть в новой вкладке.
+
+Lesson 6.
+Изображения добавляют с помощью тега img, у него есть атрибуты: src - путь, alt - текст заменитель в случае недоступлости изображения, title - попап, который будет всплывать при на наведении на изображение, loading="lazy" - отложенная загрузка, также автор рекомендует указывать width и height.
+С помощью тега <figure> можно компоновать изображение и относящуюся к нему подпись
+          <figure>
+            <img src="img/caribbean.jpg" alt="caribbean beach" title="good place to visit" width="400" height="225" loading="lazy">
+            <figcaption>
+              Caribbean Beach Getaway
+            </figcaption>
+          </figure>
+
+
+
+
+
