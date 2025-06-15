@@ -52,7 +52,22 @@ Lesson 6.
             </figcaption>
           </figure>
 
-
-
+Lesson 7.
+Семантические теги.
+"крупные" теги: header, main, footer - причем на странице допускается не более одного тега main. Более мелкими тегами являются article и section. Обычно в article выделяют часть страницы, которая довольно обособлена и имеет смысл, так что например ее можно перенести на другую страницу. В section объединяют элементы внутри article. В элемент aside включают компоненты, которые связаны с основным содержимым страницы, но не является ее неотъемлемой частью (боковые панели, рекламные блоки).  
+Видимые семантические элементы details и summary также mark:
+            <details>
+              <summary>
+                Here is demonstration of using such
+                <mark>simantic</mark> elements as: aside, detailes, summary,
+                mark, time
+              </summary>
+              <p>
+                This you will see after click arrow. Here is time:
+                <time datetime="12:00">12:00</time> o'clock
+              </p>
+            </details>
+невидимым элементом является элемент time с его помощью можно сементически выделять даты/время, либо временные интервалы.
+Для наглядного отодражения структуры страницы можно использовать расширение для хром: "HTML5 Outliner".
 
 
