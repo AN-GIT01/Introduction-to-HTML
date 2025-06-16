@@ -79,9 +79,43 @@ th - table head (может применяться как для определ�
 Для объединения нескольких ячеек используют атрибуты rowspan и colspan.
 Интересно, что таблица - блочный элемент, но она занимает только пространство необходимое для отображения содержимого, а остальное - бекграунд.
 
+Lesson 9.
+Формы объявляются тегом form. типичный пример:
+<form action="https://httpbin.org/get" method="get">
+кнопки на форме можно переопределить
+ <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button> - переопределит адрес и метод отправки данных
+ <button type="reset">Reset</button> - сбросит содержимое полей ввода в исходное состояние
+элементы ввода можно группировать с помощью тега fieldset, в таком случае станет доступна legend - надпись для всей группы элементов.
+  <fieldset>
+    <legend>Preffered food?</legend>
+    <p>...</p>
 
+типичный приме поля ввода (оборачиваем в параграф, чтобы он стал display box)
+<p>
+  <label for="firstName">First Name:</label>
+  <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus/>
+</p>
 
+типичный пример combobox
+<p>
+  <label for="coffee">Favorite Coffee:</label>
+  <select name="coffee" id="coffee">
+    <optgroup label="Coffees">
+      <option value="regular coffee">Regular Coffee</option>
+      <option value="iced coffee">Iced Coffee</option>
+    </optgroup>
+    <option value="other">Other</option>
+  </select>
+</p>
 
+похожим образом можно организовать Radio и Checkbox
+для ввода текстовой информации используют тег textarea, например:
+  <fieldset>
+    <legend>Send me a note</legend>
+    <label for="message">Your Message:</label>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+  </fieldset>
 
 
  
