@@ -20,7 +20,7 @@ Lesson 2.
 </html>
 
 Lesson 3.
-Для некоторых символов используются кодировка, например: &nbsp;&lt;&lt;&copy; 
+Для некоторых символов используются кодировка, например: &nbsp;&lt;&gt;&copy; 
 https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
 
 Lesson 4.
